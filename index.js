@@ -1,4 +1,5 @@
 let menuItem = document.querySelector(".menu")
+let menuList =document.querySelectorAll(".menu-item")
 menuItem.style.maxHeight = "0px";
 
 function toggleMenu() {
@@ -9,3 +10,11 @@ function toggleMenu() {
         menuItem.style.maxHeight = "0px";
     }
 }
+
+function hideMenu() {
+    menuItem.style.maxHeight = "0px";
+}
+
+menuList.forEach(function(item) {
+    item.addEventListener('click', hideMenu);
+});
