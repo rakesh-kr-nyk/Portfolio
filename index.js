@@ -2,6 +2,8 @@ let menuItem = document.querySelector(".menu")
 let menuList =document.querySelectorAll(".menu-item")
 menuItem.style.maxHeight = "0px";
 
+//
+
 function toggleMenu() {
     if (menuItem.style.maxHeight == "0px") {
         menuItem.style.maxHeight = "300px";
